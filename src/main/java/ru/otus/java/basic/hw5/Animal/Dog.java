@@ -13,7 +13,7 @@ public class Dog extends Animal {
         int remains = endurance - distance*2;
         float time = (float) distance /speed;
         if (distance*2 > endurance) {
-            System.out.println("У животного появилось состояние усталости.");
+            System.out.println("У животного появилось состояние усталости");
             System.out.println("Время в пути: -1");
         }
         else {

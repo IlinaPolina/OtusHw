@@ -10,7 +10,7 @@ public class MainApplication {
         cat.infoCat();
         cat.run(110);
         cat.swim(10);
-        Dog dog = new Dog("Funtic",3, 1, 200);
+        Dog dog = new Dog("Funt",3, 1, 200);
         dog.infoDog();
         dog.run(110);
         dog.swim(10);

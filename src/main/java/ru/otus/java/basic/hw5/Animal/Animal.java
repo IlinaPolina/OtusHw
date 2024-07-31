@@ -54,7 +54,7 @@ public abstract class Animal {
         int remains = endurance - distance;
         float time = (float) distance /speed;
         if (distance > endurance) {
-            System.out.println("У животного появилось состояние усталости.");
+            System.out.println("У животного появилось состояние усталости");
             System.out.println("Время в пути: -1");
         }
         else {
