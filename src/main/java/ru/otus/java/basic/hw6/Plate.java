@@ -44,7 +44,7 @@ public class Plate {
     }
     public void minusEat (boolean condition) {
         if (condition == true) {
-            currentAmountOfFood -= 10;
+            currentAmountOfFood -= 20;
             System.out.println("Тарелка уменьшилась на 10 грамм еды.");
             System.out.println("Текущее количество еды: " + currentAmountOfFood);
         }
