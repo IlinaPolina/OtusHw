@@ -23,7 +23,7 @@ public class Cat {
     }
     public void eat (Plate plate) {
         if (hungry) {
-            plate.eatFood (50);
+            plate.eatFood (350);
             System.out.println(name + " поел");
             hungry = false;
         }

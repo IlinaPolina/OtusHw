@@ -5,9 +5,9 @@ public class MainApplication {
         Plate plate = new Plate(500,0);
         plate.takeFood(600);
         Cat[] cats = {
-                new Cat("Basy", true),
-                new Cat("Vasy", true),
-                new Cat("Masy", true),
+                new Cat("Basya", true),
+                new Cat("Vasya", true),
+                new Cat("Masya", true),
         };
         for (int i = 0; i < cats.length; i++) {
             cats[i].eat(plate);
