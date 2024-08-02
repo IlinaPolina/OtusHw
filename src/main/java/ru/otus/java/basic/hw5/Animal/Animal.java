@@ -6,6 +6,13 @@ public abstract class Animal {
     int speedSwimmer;
     int endurance;
 
+    public Animal(String name, int speed, int speedSwimmer, int endurance) {
+        this.name = name;
+        this.speed = speed;
+        this.speedSwimmer = speedSwimmer;
+        this.endurance = endurance;
+    }
+
     public Animal() {
         System.out.println();
     }
@@ -40,13 +47,7 @@ public abstract class Animal {
     public void setEndurance(int endurance) {
         this.endurance = endurance;
     }
-    public void infoCat () {
-        System.out.println("Name: "+ name + " " + "Speed: "+ speed + " " + "SpeedSwimmer: " + speedSwimmer + " " + "endurance: " + endurance);
-    }
-    public void infoDog () {
-        System.out.println("Name: "+ name + " " + "Speed: "+ speed + " " + "SpeedSwimmer: " + speedSwimmer + " " + "endurance: " + endurance);
-    }
-    public void infoHorse () {
+    public void info () {
         System.out.println("Name: "+ name + " " + "Speed: "+ speed + " " + "SpeedSwimmer: " + speedSwimmer + " " + "endurance: " + endurance);
     }
 
@@ -54,7 +55,7 @@ public abstract class Animal {
         int remains = endurance - distance;
         float time = (float) distance /speed;
         if (distance > endurance) {
-            System.out.println("У животного появилось состояние усталости.");
+            System.out.println("У животного появилось состояние усталости");
             System.out.println("Время в пути: -1");
         }
         else {

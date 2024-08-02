@@ -2,10 +2,7 @@ package ru.otus.java.basic.hw5.Animal;
 
 public class Dog extends Animal {
     public Dog (String name, int speed, int speedSwimmer, int endurance) {
-        this.name = name;
-        this.speed = speed;
-        this.speedSwimmer = speedSwimmer;
-        this.endurance = endurance;
+        super(name, speed, speedSwimmer, endurance);
     }
 
     @Override
@@ -13,7 +10,7 @@ public class Dog extends Animal {
         int remains = endurance - distance*2;
         float time = (float) distance /speed;
         if (distance*2 > endurance) {
-            System.out.println("У животного появилось состояние усталости.");
+            System.out.println("У животного появилось состояние усталости");
             System.out.println("Время в пути: -1");
         }
         else {
