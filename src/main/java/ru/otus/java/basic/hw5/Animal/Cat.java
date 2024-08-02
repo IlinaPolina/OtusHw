@@ -2,10 +2,7 @@ package ru.otus.java.basic.hw5.Animal;
 
 public class Cat extends Animal {
     public Cat(String name, int speed, int speedSwimmer, int endurance) {
-        this.name = name;
-        this.speed = speed;
-        this.speedSwimmer = speedSwimmer;
-        this.endurance = endurance;
+        super(name, speed, speedSwimmer, endurance);
     }
 
     @Override
